@@ -1,0 +1,114 @@
+body{
+    background-color:#0f0e35;
+}
+
+header{
+    padding: 15px;
+}
+
+.flex-container {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Logo{
+    font-size: 36px;
+    font-weight: bold;
+    color: #f0f4f5;
+    border-radius: 10px;
+    margin-left: 76px;
+}   
+
+.nav-container{
+    display: flex;
+    margin-right:80px;
+    justify-content: space-between;
+}
+
+.navbar{
+    margin:0 auto;
+    padding: 10px;
+    border-radius: 15px;    
+}
+
+button{
+    background-color: #f0f4f5;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+main{
+    margin-top: 100px;
+}
+
+h2, p{
+    color:#f0f4f5;
+}
+
+.play{
+    width: 150px;
+    height: auto;
+    background-color: #19be01;
+    border-radius: 8px;
+
+}
+
+#poster {
+    width: 300px;
+    height: auto;
+    margin: 30px;
+}
+
+#infoMovie{
+    text-align: center;
+}
+
+#mainInfoMovieDiv{
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+}
+
+#movieRating{
+    display: flex;
+}
+  
+#rating{
+    text-align: left;
+    margin-top: 17px;
+    margin-left: 10px;
+    font-size: 25px;
+    line-height: 0.7;
+}
+
+#star{
+    height: 18px;
+    width: 18px;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+#movieContentDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#movieContent{
+    text-align: left;
+    font-size: 20px;
+    height: 444px;
+}
+
+.movieData{
+    max-width: 55ch;
+    height:23%;
+}
+
+#plot, #starts, #director{
+    margin-top: 40px;
+
+}
