@@ -2,9 +2,6 @@ body{
     background-color:#0f0e35;
 }
 
-header{
-    padding: 15px;
-}
 
 .flex-container {
     display:flex;
@@ -26,11 +23,7 @@ header{
     justify-content: space-between;
 }
 
-.navbar{
-    margin:0 auto;
-    padding: 10px;
-    border-radius: 15px;    
-}
+
 
 button{
     background-color: #f0f4f5;
@@ -43,8 +36,15 @@ main{
     margin-top: 100px;
 }
 
+
+h2{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
 h2, p{
     color:#f0f4f5;
+    
 }
 
 .play{
@@ -100,7 +100,7 @@ h2, p{
 #movieContent{
     text-align: left;
     font-size: 20px;
-    height: 444px;
+
 }
 
 .movieData{
@@ -109,5 +109,5 @@ h2, p{
 }
 
 #actors, #director, #writer{
-    margin-top: 20px;
+
 }
