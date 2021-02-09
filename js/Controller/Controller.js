@@ -30,9 +30,6 @@ class FilmeController{
 
 
 
-
-
-
 document.getElementById('procuraFilme').addEventListener("click", (event) => {
     event.preventDefault()
     FilmeController.carregaFilme(document.getElementById('pesquisaFilme').value);

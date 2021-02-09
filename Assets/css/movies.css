@@ -1,12 +1,20 @@
 body{
-    background-color:#0f0e35;
+    background-color:#605f7c;
+    font-family: 'Roboto', sans-serif;
 }
 
+header{
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
 
 .flex-container {
+
     display:flex;
     justify-content: space-around;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .Logo{
@@ -23,7 +31,25 @@ body{
     justify-content: space-between;
 }
 
+#pesquisaFilme{
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: 0;
+}
 
+#procuraFilme{
+    border: none;
+    color: #ccc;
+
+}
+
+#procuraFilme:hover{
+    background-color: white;
+    color: #0f0e35;
+
+}
 
 button{
     background-color: #f0f4f5;
@@ -106,6 +132,11 @@ h2, p{
 .movieData{
     max-width: 55ch;
     height:23%;
+}
+
+#title{
+    font-weight: bold;
+
 }
 
 #actors, #director, #writer{
