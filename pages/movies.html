@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/8d00c9585e.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Assets/css/reset.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../Assets/css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="Assets/css/movies.css">
+        <link rel="stylesheet" href="../Assets/css/movies.css">
         <title id="title-page">Document</title>
     </head>
     <body>
@@ -22,7 +22,7 @@
                     <a href="#" class="navbar">Filmes</a>
                     <a href="#" class="navbar">Séries</a>
                     <a href="#" class="navbar">Contato</a>
-                    <button type="submit">Entrar</button>
+                    <a href="login.html"  class="navbar">Entrar</a>
                 </nav>
                 <form class="d-flex">
                     <input id="pesquisaFilme"class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -44,7 +44,7 @@
             </div>
 
             <div id="movieContentDiv">
-                <img src="Assets/Img/Despicable-me.png" id="poster">
+                <img src="../Assets/Img/Despicable-me.png" id="poster">
                 <div id="movieContent">
                     <p id="plot" class="movieData"></p>
                     <br>
@@ -55,14 +55,14 @@
                     <p id="director" class="movieData"></p>
                     <br>
                     <div>
-                        <button class="play" type="submit">Play</button>
+                        <button class="play" type="submit"><i class="fas fa-play"></i> Play</button>
                         <button class="play" type="submit"> + Minha lista</button>
                     </div>
                 </div>
             </main>
-            <script src="js/Model/FilmeModel.js"></script>
-            <script src="js/View/FilmeView.js"></script>
-            <script src="js/Controller/Controller.js"></script>
+            <script src="../js/Model/FilmeModel.js"></script>
+            <script src="../js/View/FilmeView.js"></script>
+            <script src="../js/Controller/Controller.js"></script>
 
         </body>
     </html>
