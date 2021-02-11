@@ -1,16 +1,35 @@
+
 body{
    font-family: 'Roboto', sans-serif;
-   background-image:url("logo_resiliaflix.png") ;
+   /* background-image:url("../logo_resiliaflix.png") ; */
+   background-color: #a6a7a7;
 }
 .login{
    height: 100vh;
 }
 .form-login{
-   width: 40%;
-   margin-top: 5%;
-   padding:2% 0 5% 8%;
+   width: 60%;
+   margin-left:4%;
    background-color:rgba(0, 0, 0, 0.5);
-   border-radius: 40px;
+   border-radius: 35px;
+   overflow: hidden;
+   box-shadow: 10px 10px 5px #6e6e6e;
+}
+/*Animação*/
+.w3-animate-top{
+   position: relative;
+   animation: animatetop 2s;
+}
+.w3-animate-left{
+   animation: animateleft 3s;
+}
+/*Fim da animação*/
+.imagem-form{
+   width:63%;
+}
+.login-container{
+   padding:5% 5% 9% 5% ;
+   width: 37%;
 }
 .inputForm{
    border: none;
@@ -18,7 +37,6 @@ body{
    outline: 0;
    background-color: transparent;
    color: white;
-   padding-left:2%;
 }
 ::-webkit-input-placeholder{
    font-family: FontAwesome;
@@ -32,27 +50,34 @@ body{
    color: #ccc;
 }
 .btn-form{
-   width: 75%;
+   width: 85%;
    border-radius:5px;
+   background-color: transparent;
+   border-color: #ccc;
+}
+.btn-form:hover{
+   background-color: #ccc;
+   border-color: #ccc;
+   color: black;
 }
 .text-login{
-   padding-top: 30px;
    font-size: 35px;
    color: white;
+
+   padding-bottom: 40px;
+ 
 }
 .span-cadastro,
 .span-esqueceu{
    color: #ccc;
    font-size: 14px;
+   display: block;
+   padding: 1% 0 ;
 }
-.span-cadastro{
-   margin-left: 4%;
-}
+
+
 @media screen and (max-width:1280px){
-   .span-cadastro,.span-esqueceu{
-      display: block;
-      margin-left: 0;
-   }
+   
    #link-cadastro{
       margin-left: 3%;
    }
