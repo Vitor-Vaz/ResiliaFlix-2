@@ -1,5 +1,4 @@
 body{
-
     font-family: 'Roboto', sans-serif;
 }
 
@@ -10,11 +9,23 @@ header{
 }
 
 .flex-container {
-
+    font-family: 'Rubik', sans-serif;
     display:flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.flex-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.flex-container a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
 }
 
 .Logo{
@@ -59,12 +70,13 @@ button{
 }
 
 main{
-    margin-top: 100px;
+    margin-top: 70px;
+
 }
 
 
 h2{
-    font-size: 40px;
+    font-size: 50px;
     padding-bottom: 10px;
 }
 
@@ -165,3 +177,87 @@ h2, p{
 .fa-star:hover{
     color:gold
 }
+
+footer{
+    padding: 2%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    font-family: 'Rubik', sans-serif;
+   
+}
+
+
+#box1{
+    width: 80%;
+    display: flex;
+
+}
+
+#div-footer1{
+
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#div-footer1 a{
+    color: white;
+    font-size: 13px;
+}
+
+#div-footer1 p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#div-footer2{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#div-footer2 a{
+    color: white;
+    font-size: 13px;
+    
+}
+
+#div-footer2 p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#networks{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+
+}
+
+#networks p {
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#net-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#networks i{
+    font-size: 40px;
+}
+
+#networks i:hover{
+    color: white;
+}
+
