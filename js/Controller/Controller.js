@@ -6,18 +6,17 @@ class FilmeController{
         
 
         let filme = new FilmeModel()
-        // let nomeArray = nomeFilme.split(" ");
-        // let nomeConvertido = "";
-        // for(let i = 0; i < nomeArray.length; i++){
-        //     nomeConvertido += nomeArray[i] + '+';
-        // }
-        // nomeConvertido = nomeConvertido.pop();
-        // console.log(nomeConvertido);
+
 
         filme.criaMovie(nomeFilme, () => {
             
+            if(filme._title == undefined && filme._plot == undefined){
+                FilmeView.filmeNaoEncontrado(nomeFilme);
+            }else{
+                FilmeView.colocaElementos(filme);
+            }
 
-            FilmeView.colocaElementos(filme);
+
         })
 
         
@@ -33,7 +32,6 @@ class FilmeController{
 document.getElementById('procuraFilme').addEventListener("click", (event) => {
     event.preventDefault()
     FilmeController.carregaFilme(document.getElementById('pesquisaFilme').value);
-    console.log("nomeFilme");
 })
 
 
