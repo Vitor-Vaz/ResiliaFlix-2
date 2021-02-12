@@ -4,20 +4,22 @@ class ViewCadastro{
       document.getElementById('inputCity').value = cepModel.cidade || "City not found"; 
       document.getElementById('inputState').value =  cepModel.bairro || "Neighborhood not found"; 
       document.getElementById('inputAddress').value = cepModel.rua || "Street not found"; 
-  
    }
+
+   //constrói onde cai aparecer o erro 
+   static exibeMensagensDeErro(erros){
+      let ul = document.getElementById("mensagens-erro");
+      ul.innerHTML = " ";
+   
+      erros.forEach(function(erro) {
+          let li = document.createElement("li");
+          li.textContent = erro;
+          ul.appendChild(li);
+   });
 }
 
-document.getElementById("btnCadastro").addEventListener("click",(event)=>{
-   event.preventDefault();
-   let form = document.querySelector(".form-cadastro");
-
-   let erros = validaCampos();
-   if (erros.length > 0) {
-      exibeMensagensDeErro(erros);
-      return;
-   }
-
+   //Printa tela de cadastrado com sucesso 
+    static deuCerto(mensage){
       let ul = document.getElementById("mensagens-erro");
       ul.innerHTML = " ";
       ul.style.backgroundColor="transparent"
@@ -30,16 +32,15 @@ document.getElementById("btnCadastro").addEventListener("click",(event)=>{
       let h3 = document.createElement("h3");
       h3.innerHTML = document.querySelector("#inputName").value;
       
-
-          var li = document.createElement("li");
-          li.innerHTML = `Congratulations your registration was successful, now I log in`;
+          let li = document.createElement("li");
+          li.innerHTML = mensage;
           ul.appendChild(h3)
           ul.appendChild(li);
           li.appendChild(a);
-          
-          
+      
+      let form = document.querySelector(".form-cadastro");
       form.style.display="none";
+   }
 
-            
-   
- })
+}
+      //Registro do usúario
