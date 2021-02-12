@@ -13,6 +13,7 @@ class ControlerCadastro{
 
  }
  let confirm = [];
+
  document.getElementById("inputConfirmPass").addEventListener("change",()=>{
     let inputPass = document.getElementById("inputPassword");
     let inputPassConf = document.getElementById("inputConfirmPass");
@@ -33,9 +34,9 @@ class ControlerCadastro{
     }
  })
 
- 
- document.getElementById("inputCep").addEventListener("change",()=>{
-    ControlerCadastro.searchCep(document.getElementById("inputCep").value);
+
+ document.getElementById("inputCep").addEventListener("input",()=>{
+    ControlerCadastro.searchCep(document.getElementById("inputCep").value.toString());
  })
 
  function exibeMensagensDeErro(erros) {
@@ -52,17 +53,34 @@ class ControlerCadastro{
  function validaCampos() {
 
    let erros = [];
-
+   
+   
    if (document.getElementById("inputEmail").value.length < 11) {
-       erros.push("Insira o email corretamente");
+       erros.push("Insert the E-mail correctly");
    }
 
    if (document.getElementById("inputRG").value.length < 8) {
-       erros.push("Insira o Rg corretamente");
+       erros.push("Insert the RG correctly");
    }
 
    if (document.getElementById("inputCep").value.length < 8) {
-       erros.push("Insira o cep correto");
+       erros.push("Enter the correct zip code");
+   }
+
+   if (document.getElementById("inputCity").value == "City not found") {
+      erros.push("City not found");
+  }
+
+  if (document.getElementById("inputState").value == "Neighborhood not found") {
+   erros.push("Neighborhood  not found");
+   }
+
+   if (document.getElementById("inputAddress").value == "Street not found") {
+   erros.push("Street not found");
+   }
+
+   if(confirm == 0){
+      erros.push("Passwords must be the same");
    }
 
    return erros;

@@ -1,13 +1,14 @@
-*{
-   font-family: 'Roboto', sans-serif;
-}
+
 body{
    background-image: url("../img/fundo_cadastro.jpg");
    background-size: cover;
-   background-repeat: no-repeat;
+
+}
+.imagem-responsive{
+   text-align: center;
 }
 .div-cadastro{
-   width: 40%;
+   width: 50%;
    margin: 0 auto;
    background-color: rgba(0, 0, 0, 0.7);
    border-radius: 30px;
@@ -35,15 +36,34 @@ body{
    outline: 0;
 }
 .input-rg::-webkit-inner-spin-button, 
-.input-rg::-webkit-outer-spin-button { 
+.input-rg::-webkit-outer-spin-button,
+#inputCep::-webkit-inner-spin-button,
+#inputCep::-webkit-outer-spin-button{ 
   -webkit-appearance: none; 
   margin: 0; 
 }
-
+a{
+  text-decoration: none;
+}
 .h1{text-align: center;}
 
+.btn{
+   background-color: transparent;
+   border-color:#ccc ;
+}
+.btn:hover{
+   background-color: #ccc;
+   color: black;
+}
 #mensagens-erro{
    background-color: #F75353;
-   border-radius: 8px;
+   border-radius: 5px;
    text-align: center;
+   font-size:18px;
+   list-style-type: none;
+}
+@media screen and (max-width:900px){
+   .div-cadastro{
+      width: 80%;
+   }
 }
