@@ -6,7 +6,7 @@ function logar(){
           let inputPassword = document.getElementById("input-password-login").value;
          const valorEntrada = JSON.parse(localStorage.getItem("entrar"))
          if(inputEmail == valorEntrada.email && inputPassword == valorEntrada.password)
-         alert("logar");
+         alert("Logado")
          else
          alert("não cadastrado")
       })

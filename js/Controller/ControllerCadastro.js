@@ -43,12 +43,13 @@ class ControlerCadastro{
       }
       return erros;
    }
-   
+
    static guardar(){
       const email = document.getElementById("inputEmail").value;
       const password = document.getElementById("inputPassword").value;
-   
+      const nome = document.getElementById("inputName").value;
       const entrada = {
+         nome,
          email,
          password
       }
