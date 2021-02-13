@@ -1,15 +1,11 @@
 
 body{
    font-family: 'Roboto', sans-serif;
-<<<<<<< HEAD:Assets/css/login.css
-   background-image:url("../Img/logo_resiliaflix.png") ;
-=======
  
    background-color: #a6a7a7;
 }
 .imagem-responsive{
    display: none;
->>>>>>> 41c54df4e534f1f1e8c0aae93adbd553af6d9221:src/login.css
 }
 .login{
    height: 100vh;
@@ -58,13 +54,6 @@ body{
    color: #ccc;
 }
 .btn-form{
-<<<<<<< HEAD:Assets/css/login.css
-   height: 30px;
-   background-color: rgba(0, 0, 0, 0);
-   width: 75%;
-   border-radius: 5px;
-   border-color: #ccc;
-=======
    width: 85%;
    border-radius:10px;
    background-color: transparent;
@@ -74,7 +63,6 @@ body{
    background-color: #ccc;
    border-color: #ccc;
    color: black;
->>>>>>> 41c54df4e534f1f1e8c0aae93adbd553af6d9221:src/login.css
 }
 
 .btn-form:hover{

@@ -1,6 +1,6 @@
 
 body{
-   background-image: url("../img/fundo_cadastro.jpg");
+   background-image: url("../Img/fundo_cadastro.jpg");
    background-size: cover;
 
 }
@@ -14,11 +14,15 @@ body{
    border-radius: 30px;
    padding: 2%;
 }
+
 .form-label{
    padding-top: 10px;
    color: #ccc;
    font-size: 20px;
    font-weight: 300;
+}
+.w3-animate-top{
+   animation-duration: 1000ms;
 }
 .input-cadastro{
    border: none;
@@ -44,12 +48,14 @@ body{
 }
 a{
   text-decoration: none;
+  color: #5bf870;
 }
 .h1{text-align: center;}
 
 .btn{
    background-color: transparent;
    border-color:#ccc ;
+   color: #ccc;
 }
 .btn:hover{
    background-color: #ccc;
