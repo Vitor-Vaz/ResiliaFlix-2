@@ -9,6 +9,7 @@ body{
     align-items: center;
     background-color: rgba(126, 121, 121, 0.6);
     font-size: 20px;
+    
 }
 
 #hamburguer{
@@ -74,7 +75,7 @@ button{
 }
 
 main{
-    margin-top: 10px;
+    margin-top: 120px;
 
 }
 
