@@ -8,81 +8,101 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Rubik&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../Assets/css/reset.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
         <link rel="stylesheet" href="../Assets/css/movies.css">
         <link rel="icon" href="../Assets/img/logo.png" type="image/x-icon">
         <title id="title-page">Document</title>
     </head>
     <body>
+
         <header>
-            <div class="flex-container">
-                <h1>
-                    <img class="logo" src="../Assets/img/logo.png" alt="">
-                </h1>
-                <nav class="nav-container">
-                    <a href="#" class="navbar">Filmes</a>
-                    <a href="#" class="navbar">Séries</a>
-                    <a href="#" class="navbar">Contato</a>
-                    <a href="login.html" class="navbar">Entrar</a>
-                </nav>
-                <form class="d-flex">
-                    <input id="pesquisaFilme" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button id="procuraFilme" class="btn btn-outline-success" type="submit">
-                        <i class="fas fa-search"></i>
+
+            <nav class="navbar navbar-expand-lg flex-container">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="logo" src="../Assets/img/logo.png" alt=""></a>
+                    <button class="navbar-toggler navbar-dark " id="hamburguer" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                </form>
-            </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Vitor Vaz
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Account</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">My List</a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input id="pesquisaFilme" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button id="procuraFilme" class="btn btn-outline-success" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
 
         </header>
         <main>
-            <div id="mainInfoMovieDiv">
+            <div id="mainInfoMovieDiv"></div>
 
-            </div>
+            <div id="movieContentDiv"></div>
 
-            <div id="movieContentDiv">
+            
+        </main>
+        <footer>
 
-            </div>
+                <div id="box1">
 
-            <footer>
-
-
-
-                    <div id="box1">
-
-                        <div id="div-footer1">
-                            <p>Help</p>
-                            <a href="#">Suport and Help</a>
-                            <a href="#">Foruns</a>
-                            <a href="#">Github</a>
-                            <a href="#">API's: Correios API e IMDB API</a>
-                        </div>
-
-                        <div id="div-footer2">
-                            <p>Legal</p>
-                            <a href="#">Security</a>
-                            <a href="#">Privacy</a>
-                            <a href="#">Cookie Policy</a>
-                            <a href="#">Contact Us</a>
-                        </div>
-
+                    <div id="div-footer1">
+                        <p>Help</p>
+                        <a href="#">Suport and Help</a>
+                        <a href="#">Foruns</a>
+                        <a href="#">Github</a>
+                        <a href="#">API's: Correios API e IMDB API</a>
                     </div>
-                    
-                    <div id="networks">
-                        <p>Follow Us!</p>
-                        <div id="net-icons">
 
- 
+                    <div id="div-footer2">
+                        <p>Legal</p>
+                        <a href="#">Security</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+
+                </div>
+
+                <div id="networks">
+                    <p>Follow Us!</p>
+                    <div id="net-icons">
+
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-linkedin-in"></i>
                         <i class="fab fa-youtube"></i>
-                        </div>
                     </div>
-
-
+                </div>
 
             </footer>
-        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script src="../js/Model/FilmeModel.js"></script>
         <script src="../js/View/FilmeView.js"></script>
         <script src="../js/Controller/Controller.js"></script>

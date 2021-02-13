@@ -20,14 +20,22 @@ get cidade(){
       let request = new XMLHttpRequest();
       request.open("GET", `https://viacep.com.br/ws/${cep}/json/`);
       request.addEventListener('load',()=>{
-         let response = JSON.parse(request.responseText);
-         this._cidade = response.localidade;
-         this._rua = response.logradouro;
-         this._bairro = response.bairro;
-
-
-         callback();
-      })
+      try{
+         if(request.status == 200){
+            let response = JSON.parse(request.responseText);
+            this._cidade = response.localidade;
+            this._rua = response.logradouro;
+            this._bairro = response.bairro;
+            callback();
+          }
+          else{
+            request.error404();
+            throw new Error("Algo está errado");
+         }
+      }catch(e){
+         console.log(e);
+      }
+      });
       request.send();
    }
 }

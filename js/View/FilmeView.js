@@ -29,11 +29,12 @@ class FilmeView {
                 <br>
                 <p id="director" class="movieData"><b>Director:</b> ${elemento._director}</p>
                 <br>
-            <div>
-                <button class="play" type="submit"><i class="fas fa-play"></i>Play</button>
-                <button class="play" type="submit">+ My list</button>
+
+                <div>
+                    <button class="play" type="submit"><i class="fas fa-play"></i> Play</button>
+                    <button class="play" type="submit">+ My list</button>
+                </div>
             </div>
-        </div>
         
         
         `

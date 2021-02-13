@@ -1,16 +1,42 @@
+
 body{
    font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD:Assets/css/login.css
    background-image:url("../Img/logo_resiliaflix.png") ;
+=======
+ 
+   background-color: #a6a7a7;
+}
+.imagem-responsive{
+   display: none;
+>>>>>>> 41c54df4e534f1f1e8c0aae93adbd553af6d9221:src/login.css
 }
 .login{
    height: 100vh;
 }
 .form-login{
-   width: 40%;
-   margin-top: 5%;
-   padding:2% 0 5% 8%;
+   width: 60%;
+   margin-left:4%;
    background-color:rgba(0, 0, 0, 0.5);
-   border-radius: 40px;
+   border-radius: 35px;
+   overflow: hidden;
+   box-shadow: 15px 15px 7px #6e6e6e;
+}
+/*Animação*/
+.w3-animate-top{
+   position: relative;
+   animation: animatetop 2s;
+}
+.w3-animate-left{
+   animation: animateleft 3s;
+}
+/*Fim da animação*/
+.imagem-form{
+   width:63%;
+}
+.login-container{
+   padding:5% 5% 9% 5% ;
+   width: 37%;
 }
 .inputForm{
    border: none;
@@ -18,7 +44,7 @@ body{
    outline: 0;
    background-color: transparent;
    color: white;
-   padding-left:2%;
+   width: 85%;
 }
 ::-webkit-input-placeholder{
    font-family: FontAwesome;
@@ -32,11 +58,23 @@ body{
    color: #ccc;
 }
 .btn-form{
+<<<<<<< HEAD:Assets/css/login.css
    height: 30px;
    background-color: rgba(0, 0, 0, 0);
    width: 75%;
    border-radius: 5px;
    border-color: #ccc;
+=======
+   width: 85%;
+   border-radius:10px;
+   background-color: transparent;
+   border-color: #ccc;
+}
+.btn-form:hover{
+   background-color: #ccc;
+   border-color: #ccc;
+   color: black;
+>>>>>>> 41c54df4e534f1f1e8c0aae93adbd553af6d9221:src/login.css
 }
 
 .btn-form:hover{
@@ -46,37 +84,55 @@ body{
 }
 
 .text-login{
-   padding-top: 30px;
    font-size: 35px;
    color: white;
+   padding-top: 20%
+ 
 }
 #span-cadastro,
 #span-esqueceu{
    color: #ccc;
    font-size: 14px;
+   display: block;
+   padding: 1% 0 ;
 }
-.span-cadastro{
-   margin-left: 4%;
-}
-@media screen and (max-width:1280px){
-   .span-cadastro,.span-esqueceu{
-      display: block;
-      margin-left: 0;
-   }
-   #link-cadastro{
-      margin-left: 3%;
-   }
-}
-@media screen and (max-width:580px){
+
+@media screen and (max-width:630px){
    .form-login{
-      width: 70%;
+      width: 80%;
    }
    .inputForm{
-      width: 100vw;
+    padding-right: 3%;
+    width: 100%;
    }
    .btn-form{
       margin-left: 0;
-      width: 75%;
+      width: 100%;
    }
 }
-
+@media screen and (max-width:440px){
+   .login{
+      height: 45vh;
+   }
+   .imagem-form{
+      display: none;
+   }
+   .login-container{
+      width: 100%;
+     }
+   .text-login{
+      text-align: center;
+      padding-top: 10%;
+   }
+   .imagem-responsive{
+      text-align: center;
+      display: block;
+   }
+   .form-login{
+      margin-left: 1%;
+      box-shadow: 10px 10px 5px #5e5e5e;
+   }
+   .img-responsive{
+      width: 70%;
+   }
+}

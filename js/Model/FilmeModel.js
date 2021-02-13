@@ -17,7 +17,7 @@ class FilmeModel {
 
 
         let request = new XMLHttpRequest();
-        request.open("GET", `http://www.omdbapi.com/?i=tt3896198&apikey=f4851b3c&t=${nomeFilme}`);
+        request.open("GET", `https://www.omdbapi.com/?i=tt3896198&apikey=f4851b3c&t=${nomeFilme}`);
         request.addEventListener('load', () => {
             try {
                 if (request.status != 200) throw "Um código inesperado foi retornado!";
