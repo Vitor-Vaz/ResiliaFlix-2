@@ -65,18 +65,18 @@ class ControlerCadastro{
     let inputPassConf = document.getElementById("inputConfirmPass");
     if(inputPass.value == inputPassConf.value){
       confirm = 1
-      inputPass.classList.remove("is-invalid")
-      inputPassConf.classList.remove("is-invalid") 
-      inputPass.classList.add("is-valid")
-      inputPassConf.classList.add("is-valid") 
+      inputPass.classList.remove("is-invalid");
+      inputPassConf.classList.remove("is-invalid");
+      inputPass.classList.add("is-valid");
+      inputPassConf.classList.add("is-valid");
 
     }
     else{
        confirm = 0
-      inputPass.classList.remove("is-valid")
-      inputPassConf.classList.remove("is-valid") 
-      inputPass.classList.add("is-invalid")
-      inputPassConf.classList.add("is-invalid")
+      inputPass.classList.remove("is-valid");
+      inputPassConf.classList.remove("is-valid"); 
+      inputPass.classList.add("is-invalid");
+      inputPassConf.classList.add("is-invalid");
     }
  })
 
@@ -92,9 +92,9 @@ class ControlerCadastro{
    ControlerCadastro.guardar();
       //Confere erros 
    if(ControlerCadastro.confereErro())
-   ControlerCadastro.confereErro();
+      ControlerCadastro.confereErro();
    else
-   ViewCadastro.deuCerto(`Congratulations your registration was successful, now I log in`);
+      ViewCadastro.deuCerto(`Congratulations your registration was successful, now I log in`);
  }) 
 
 

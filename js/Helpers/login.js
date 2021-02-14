@@ -5,6 +5,7 @@ class Login{
       const valorEntrada = JSON.parse(localStorage.getItem("entrar"));
 
          if(inputEmail === valorEntrada.email && inputPassword === valorEntrada.password){
+            //Mudar para home
             window.location.href="movies.html";
          }
          else{

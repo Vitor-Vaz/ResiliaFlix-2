@@ -4,6 +4,7 @@ body{
    background-size: cover;
 
 }
+/*INICIO PAGE*/
 .imagem-responsive{
    text-align: center;
 }
@@ -68,6 +69,8 @@ a{
    font-size:18px;
    list-style-type: none;
 }
+
+/*FOOTER*/
 footer{
 
    bottom: 0px;

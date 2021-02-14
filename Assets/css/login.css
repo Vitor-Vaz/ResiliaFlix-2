@@ -27,6 +27,7 @@ body{
    animation: animateleft 3s;
 }
 /*Fim da animação*/
+/*Formulario login*/
 .imagem-form{
    width:63%;
 }
@@ -87,6 +88,8 @@ body{
    display: block;
    padding: 1% 0 ;
 }
+
+/*FOOTER*/
 footer{
    bottom: 0px;
    padding: 2%;
@@ -105,9 +108,7 @@ footer{
 }
 
 #div-footer1{
-
    width: 50%;
-   
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -125,7 +126,6 @@ footer{
 }
 
 #div-footer2{
-
    width: 50%;
    display: flex;
    flex-direction: column;
