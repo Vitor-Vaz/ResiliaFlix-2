@@ -40,6 +40,9 @@ class ViewCadastro{
       
       let form = document.querySelector(".form-cadastro");
       form.style.display="none";
+      
+      let footer = document.getElementById("footer");
+      footer.style.position="absolute"
    }
 
 }

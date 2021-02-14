@@ -49,12 +49,12 @@ class ControlerCadastro{
       const password = document.getElementById("inputPassword").value;
       const nome = document.getElementById("inputName").value;
       const entrada = {
-         nome,
          email,
          password
       }
       localStorage.setItem("entrar",JSON.stringify(entrada));
-   
+      localStorage.setItem("user",nome);
+
    }
  }
 
@@ -67,8 +67,8 @@ class ControlerCadastro{
       confirm = 1
       inputPass.classList.remove("is-invalid")
       inputPassConf.classList.remove("is-invalid") 
-       inputPass.classList.add("is-valid")
-       inputPassConf.classList.add("is-valid") 
+      inputPass.classList.add("is-valid")
+      inputPassConf.classList.add("is-valid") 
 
     }
     else{
