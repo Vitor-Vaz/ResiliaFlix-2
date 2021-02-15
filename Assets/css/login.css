@@ -57,6 +57,10 @@ body{
 .form-check-label{
    color: #ccc;
 }
+
+#caps-lock{
+   color: #ccc;
+}
 .btn-form{
    width: 85%;
    border-radius:10px;
@@ -88,6 +92,8 @@ body{
    display: block;
    padding: 1% 0 ;
 }
+
+
 
 /*FOOTER*/
 footer{
