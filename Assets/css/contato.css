@@ -1,0 +1,104 @@
+body{
+   font-family: 'Rubik', sans-serif;
+}
+
+main{
+   width: 100%;
+   margin-top: 120px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+.main-container{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 30px 60px;
+   justify-content: space-around; 
+   background-color: rgba(126, 121, 121, 0.6);
+}
+
+h1{
+   font-weight: 700;
+   font-size:36px;
+   font-weight: bold;
+}
+
+ h2{
+    font-weight: 700;
+    font-size:18px;
+ }
+
+ p{
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(0, 0%, 59%); 
+ }
+
+ .box{
+   background-color: white;
+   text-align: center;
+   width: 380px;
+   height: 470px;
+   border-radius: 10px;
+   margin-bottom: 40px;
+}
+ 
+#inst{
+   width: 35px;
+   height: 35px;
+}
+ .header{
+    background-color: rgba(63, 62, 62, 0.6);
+     padding: 1%;
+     margin-bottom: 25%;
+ }
+ 
+ .fotoPerfil{
+    width: 160px !important;
+    height:140px !important; 
+    border-radius: 50%;
+    margin: 6px ;
+    border: solid 4px #FFF;
+    transform: translateY(60%);
+    } 
+ 
+ .barra{
+    border-bottom: 1px solid #ccc;
+ }
+ 
+ .information1{
+   margin-bottom: 5%;
+ }
+ .nomeIdade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+ }
+ .nomeIdade p{
+    margin-left: 7px;
+ }
+ .information2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:8% ;
+ }
+ 
+ .description h2{
+    margin-bottom: 10px;
+ }
+
+ @media screen and (max-width:440px){
+   .box{
+      background-color: white;
+      text-align: center;
+      width: 90%;
+      height: 470px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+   }  
+ }
