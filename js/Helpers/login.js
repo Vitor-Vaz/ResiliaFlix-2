@@ -20,5 +20,15 @@ login.addEventListener("click", (event)=>{
    Login.loginCorreto();
 })
 
+document.addEventListener('keydown', ( event ) =>{
+   //Tecla modificadora, CapsLock
+   //getModifierState, verifica o estado atual da tecla
+   let flag = event.getModifierState && event.getModifierState('CapsLock');
+   let p = document.getElementById("caps-lock");
+   // Opedador condicional ? EX: condicao ? valor1 : valor2 
+   //Se condicao for verdadeira, o operador terá o valor de valor1. Caso contrário, terá o valor de valor2
+   p.textContent = flag ? "CapsLock Ativado !" : " "; 
+ });
+
 
 
