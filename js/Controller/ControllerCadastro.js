@@ -52,6 +52,19 @@ class ControlerCadastro{
          email,
          password
       }
+      const dados = {
+         _name: document.getElementById("inputName").value,
+         _email: document.getElementById("inputEmail").value,
+         _id: document.getElementById("inputRG").value,
+         _digit: document.getElementById("inputDigito").value,
+         _zipcode: document.getElementById("inputCep").value,
+         _city: document.getElementById("inputCity").value,
+         _neighborhood: document.getElementById("inputState").value,
+         _street: document.getElementById("inputAddress").value
+      }
+
+
+      localStorage.setItem("dados", JSON.stringify(dados))
       localStorage.setItem("entrar",JSON.stringify(entrada));
       localStorage.setItem("user",nome);
 
@@ -96,6 +109,8 @@ class ControlerCadastro{
    else
       ViewCadastro.deuCerto(`Congratulations your registration was successful, now I log in`);
  }) 
+
+
 
 
 
