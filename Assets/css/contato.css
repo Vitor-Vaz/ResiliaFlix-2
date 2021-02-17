@@ -93,7 +93,6 @@ button{
  .box{
     /* background-image: url("../Assets/Img/fundoWesley.png"); Não estou conseguindo chegar na pagina desejada  */
     background-color: white;
-    
     text-align: center;
     width: 380px; /* largura */
     /* margin: auto auto; */
@@ -160,7 +159,28 @@ button{
  .header{
     background-color:#c1c0e0 ;/* aqui eu faço a edção da capa da foto */
      margin-bottom: 25%;
+     background-image: url("../Img/fundoWesley.png");
  }
+ .header_2{
+   background-color:#c1c0e0 ;/* aqui eu faço a edção da capa da foto */
+    margin-bottom: 25%;
+    background-image: url("../Img/vazback.jpg");
+}
+.header_3{
+   background-color:#c1c0e0 ;/* aqui eu faço a edção da capa da foto */
+    margin-bottom: 25%;
+    background-image: url("../Img/pauloback.jpeg");
+}
+.header_4{
+   background-color:#c1c0e0 ;/* aqui eu faço a edção da capa da foto */
+    margin-bottom: 25%;
+    background-image: url("../Img/peterback.jpeg");
+}
+.header_5{
+   background-color:#c1c0e0 ;/* aqui eu faço a edção da capa da foto */
+    margin-bottom: 25%;
+    background-image: url("../Img/gabiback.jpeg");
+}
  
  .fotoPerfil{
     width: 160px !important;
