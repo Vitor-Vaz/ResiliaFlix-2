@@ -66,6 +66,7 @@ body{
    border-radius:10px;
    background-color: transparent;
    border-color: #ccc;
+   color: #ccc;
 }
 .btn-form:hover{
    background-color: #ccc;

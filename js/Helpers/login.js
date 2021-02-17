@@ -3,10 +3,12 @@ class Login{
       let inputEmail = document.getElementById("input-email-login").value;
       let inputPassword = document.getElementById("input-password-login").value;
       const valorEntrada = JSON.parse(localStorage.getItem("entrar"));
-
-         if(inputEmail === valorEntrada.email && inputPassword === valorEntrada.password){
+         if(localStorage.getItem("entrar") == null){
+            alert("Register")
+         }
+         if(inputEmail === valorEntrada.email && inputPassword === valorEntrada.password ){
             //Mudar para home
-            window.location.href="movies.html";
+            window.location.href="paginainicialHome.html";
          }
          else{
            document.querySelector(".invalid-feedback").style.display="block";
