@@ -6,7 +6,7 @@ class Login{
 
          if(inputEmail === valorEntrada.email && inputPassword === valorEntrada.password){
             //Mudar para home
-            window.location.href="paginaInicialHome.html";
+            window.location.href="home.html";
          }
          else{
            document.querySelector(".invalid-feedback").style.display="block";

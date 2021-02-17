@@ -56,6 +56,11 @@ button:hover{
     transition: .5s;
 }
 
+.w3-animate-top{
+    animation-duration: 1000ms;
+ }
+
+
 @media(max-width: 600px){
     .container-account{
         width: 100%;
