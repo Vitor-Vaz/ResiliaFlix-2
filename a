@@ -1,0 +1,42 @@
+[33mcommit 450485c8b0b7e600057a50eeb1b40034f6af46c7[m[33m ([m[1;36mHEAD -> [m[1;32mvitorBranch[m[33m)[m
+Merge: dc1cded 8817dde
+Author: Vitor-Vaz <vitor.vaz.andrade@gmail.com>
+Date:   Tue Feb 9 01:40:23 2021 -0300
+
+    Merge branch 'Paulo' of https://github.com/Vitor-Vaz/ResiliaFlix-2 into vitorBranch
+
+[33mcommit dc1cded426bef33463d25426d30ecd6b4f74a150[m[33m ([m[1;31morigin/vitorBranch[m[33m)[m
+Author: Vitor-Vaz <vitor.vaz.andrade@gmail.com>
+Date:   Tue Feb 9 01:29:15 2021 -0300
+
+    issue #2: atualizando algumas coisas no design
+
+[33mcommit 8817dde3fb4dd592fc12464a366748779266eddf[m[33m ([m[1;31morigin/Paulo[m[33m, [m[1;32mPaulo[m[33m)[m
+Author: Paulo-oRicardo <paulo.ricardo.prym@gmail.com>
+Date:   Mon Feb 8 21:59:42 2021 -0300
+
+    Primeira Versão issue#1
+
+[33mcommit 36998866c94093828c4914501818419f297093a1[m
+Author: Vitor-Vaz <vitor.vaz.andrade@gmail.com>
+Date:   Mon Feb 8 02:05:29 2021 -0300
+
+    issue #1: incluindo MVC para os filmes e pesquisa parcialmente implementada
+
+[33mcommit d6e6eee0697449ca0998de32c352ef4b3f0470c3[m[33m ([m[1;31morigin/gabriella[m[33m, [m[1;32mgabriella[m[33m, [m[1;32mMerge[m[33m)[m
+Author: gspgaby <gspgaby@gmail.com>
+Date:   Sun Feb 7 14:08:12 2021 -0300
+
+    isues#2: inclusão model
+
+[33mcommit ce1e399117d97b7106adbb273ca3572b6d8f8eb3[m
+Author: gspgaby <gspgaby@gmail.com>
+Date:   Sun Feb 7 10:19:48 2021 -0300
+
+    filmes
+
+[33mcommit fe8ae522989d1f5eb13b7848b78a29e7879b3f02[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Vitor Vaz <38548484+Vitor-Vaz@users.noreply.github.com>
+Date:   Sat Feb 6 13:54:32 2021 -0300
+
+    Initial commit

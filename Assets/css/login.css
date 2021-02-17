@@ -1,0 +1,82 @@
+body{
+   font-family: 'Roboto', sans-serif;
+   background-image:url("../Img/logo_resiliaflix.png") ;
+}
+.login{
+   height: 100vh;
+}
+.form-login{
+   width: 40%;
+   margin-top: 5%;
+   padding:2% 0 5% 8%;
+   background-color:rgba(0, 0, 0, 0.5);
+   border-radius: 40px;
+}
+.inputForm{
+   border: none;
+   border-bottom: 1px solid #ccc;
+   outline: 0;
+   background-color: transparent;
+   color: white;
+   padding-left:2%;
+}
+::-webkit-input-placeholder{
+   font-family: FontAwesome;
+   text-align:right; 
+}
+.inputForm:-moz-placeholder{
+   font-family: FontAwesome;
+   text-align:right; 
+}
+.labelForm{
+   color: #ccc;
+}
+.btn-form{
+   height: 30px;
+   background-color: rgba(0, 0, 0, 0);
+   width: 75%;
+   border-radius: 5px;
+   border-color: #ccc;
+}
+
+.btn-form:hover{
+   background-color: #ccc;
+   border-color: #ccc;
+   color: black;
+}
+
+.text-login{
+   padding-top: 30px;
+   font-size: 35px;
+   color: white;
+}
+#span-cadastro,
+#span-esqueceu{
+   color: #ccc;
+   font-size: 14px;
+}
+.span-cadastro{
+   margin-left: 4%;
+}
+@media screen and (max-width:1280px){
+   .span-cadastro,.span-esqueceu{
+      display: block;
+      margin-left: 0;
+   }
+   #link-cadastro{
+      margin-left: 3%;
+   }
+}
+@media screen and (max-width:580px){
+   .form-login{
+      width: 70%;
+   }
+   .inputForm{
+      width: 100vw;
+   }
+   .btn-form{
+      margin-left: 0;
+      width: 75%;
+   }
+}
+

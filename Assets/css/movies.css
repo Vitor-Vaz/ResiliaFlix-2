@@ -1,0 +1,263 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.flex-container {
+    font-family: 'Rubik', sans-serif;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.flex-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.flex-container a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+}
+
+.Logo{
+    font-size: 36px;
+    font-weight: bold;
+    color: #f0f4f5;
+    border-radius: 10px;
+    margin-left: 76px;
+}   
+
+.nav-container{
+    display: flex;
+    margin-right:80px;
+    justify-content: space-between;
+}
+
+#pesquisaFilme{
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: 0;
+}
+
+#procuraFilme{
+    border: none;
+    color: #ccc;
+
+}
+
+#procuraFilme:hover{
+    background-color: white;
+    color: #0f0e35;
+
+}
+
+button{
+    background-color: #f0f4f5;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+main{
+    margin-top: 70px;
+
+}
+
+
+h2{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+h2, p{
+    color:#f0f4f5;
+    
+}
+
+.play{
+    color: white;
+    width: 300px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px white solid;
+    border-radius: 1px;
+
+}
+
+.play:hover{
+    color: #0f0e35;
+    border-color: #0f0e35;
+    background-color: white;
+    transform: scale(1.0);
+}
+
+#poster {
+    width: 300px;
+    height: auto;
+    margin: 30px;
+}
+
+#infoMovie{
+    text-align: center;
+    color: #0f0e35;
+}
+
+#mainInfoMovieDiv{
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    
+    
+}
+
+#mainInfoMovieDiv h2{
+    color: black;
+}
+
+#mainInfoMovieDiv p{
+    color: black;
+}
+
+#movieRating{
+    display: flex;
+    color: #0f0e35;
+}
+  
+#rating{
+    text-align: left;
+    margin-top: 17px;
+    margin-left: 10px;
+    font-size: 25px;
+    line-height: 0.7;
+    color: #0f0e35;
+}
+
+#star{
+    height: 18px;
+    width: 18px;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+#movieContentDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#movieContent{
+    text-align: left;
+    font-size: 20px;
+
+}
+
+.movieData{
+    max-width: 55ch;
+    height:23%;
+}
+
+#title{
+    font-weight: bold;
+
+}
+
+.fa-star:hover{
+    color:gold
+}
+
+footer{
+    padding: 2%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    font-family: 'Rubik', sans-serif;
+   
+}
+
+
+#box1{
+    width: 80%;
+    display: flex;
+
+}
+
+#div-footer1{
+
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#div-footer1 a{
+    color: white;
+    font-size: 13px;
+}
+
+#div-footer1 p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#div-footer2{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#div-footer2 a{
+    color: white;
+    font-size: 13px;
+    
+}
+
+#div-footer2 p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#networks{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+
+}
+
+#networks p {
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#net-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#networks i{
+    font-size: 40px;
+}
+
+#networks i:hover{
+    color: white;
+}
+

@@ -1,0 +1,15 @@
+.div-cadastro{
+   width: 40%;
+   margin: 0 auto;
+   border: 1px solid black;
+   padding: 2%;
+}
+.input-rg::-webkit-inner-spin-button, 
+.input-rg::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input{
+   outline: 0;
+}
+.h1{text-align: center;}
