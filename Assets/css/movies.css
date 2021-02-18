@@ -63,7 +63,7 @@ h2, p{
     display: flex;
     text-align: left;
     justify-content: space-evenly;
-    
+    padding-bottom: 20px;
 }
 
 #mainInfoMovieDiv h2{
@@ -122,6 +122,10 @@ h2, p{
 .w3-animate-top{
     animation: animatetop 2s;
  }
+
+.movieNotFound h3{
+    font-size: 30px;
+}
 
 #title{
     font-weight: bold;
