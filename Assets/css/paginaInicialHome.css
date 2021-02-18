@@ -1,13 +1,3 @@
-/*Footer*/
-.flex-container {
-    font-family: 'Rubik', sans-serif;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(126, 121, 121, 0.6);
-    font-size: 20px;
-    
-}
 
 #hamburguer{
     border-color: white;
@@ -23,6 +13,11 @@
     border-color: white;
 }
 
+.flex-container{
+    height: 100px;
+    padding: 20px;
+}
+
 .flex-container a{
     text-decoration: none;
     color: white;
@@ -35,7 +30,7 @@
 }
 
 .logo{
-    margin-top: 10p;
+    margin-top: 10px;
     width: 150px;
 }   
 
@@ -94,7 +89,7 @@ p, li{
 /*Barra de Navegação*/
 
 header, .navbar{
-    background-color:rgba(126, 121, 121, 0.6);
+    background-color: #03030393;
 }
 
 #nav-container{
@@ -104,7 +99,7 @@ header, .navbar{
 
 #logo{
     width: 100px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .navbar-brand{
@@ -144,35 +139,101 @@ header, .navbar{
     top:30%
 }
 
-/* Catalogo de filmes*/
-.container{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    flex: 1;
+
+
+/*Carrouseus*/
+
+.div1 img{
+    width: 300px;
+    height: 310px  ;
+    display:inline-block;
+    margin: 8px;
+    border-radius: 6px;
 }
 
-.imagens{
-    display:flex;
-    margin: 10px;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    align-items: center; 
-    width: 940px;
+.div1{
+    height: 360px ;
+    overflow: auto;
+    white-space: nowrap;
+    background-color:white;
+    border: 3px solid black;
 }
 
-.cada-imagem{
-    border-radius: 5%; 
-    width: 200px !important;
-    height: 300px !important;
-    margin: 6px;
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track{
+      box-shadow: inset 0 0 1px black;
+  }
+  ::-webkit-scrollbar-track {
+    background:#888;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #424242;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: black;
+  }
+
+.div2 img{
+    width: 300px;
+    height: 310px  ;
+    display:inline-block;
+    margin: 8px;
+    border-radius: 6px;
 }
 
-.cada-imagem:hover{
-    transform: scale(1.2);
-    transition-duration: 1s;
+.div2{
+    height: 360px ;
+    overflow: auto;
+    white-space: nowrap;
+    background-color:white;
+    border: 3px solid black;
 }
+
+.div3 img{
+    width: 300px;
+    height: 310px  ;
+    display:inline-block;
+    margin: 8px;
+    border-radius: 6px;
+}
+
+.div3{
+    height: 360px ;
+    overflow: auto;
+    white-space: nowrap;
+    background-color:white;
+    border: 3px solid black;
+}
+
+.div4 img{
+    width: 300px;
+    height: 310px  ;
+    display:inline-block;
+    margin: 8px;
+    border-radius: 6px;
+}
+
+.div4{
+    height: 360px ;
+    overflow: auto;
+    white-space: nowrap;
+    background-color:white;
+    border: 3px solid black;
+}
+
+/*Textos*/
+
+h2{
+font-weight: bold !important;   
+margin-left: 5px !important;
+margin-top:20px !important;
+margin-bottom: 20px !important;
+}
+
+
+
 
 /*FOOTER*/
 footer{
@@ -299,6 +360,7 @@ footer{
     }
  
     footer{
+       margin-top: 20%;
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -308,42 +370,11 @@ footer{
        margin-top: 20px
    }
  }
- 
-footer{
-    bottom: 0px;
-    padding: 2%;
-    width: 100%;
-    display: flex;
-    background-color: black;
-    font-family: 'Rubik', sans-serif;
-   
-}
-
-
-
-@media(max-width: 600px){
-    main{
-        display: flex;
-        flex-direction: column;
-
-        }
-
-    #movieContentDiv {
-        display: flex;
-        flex-direction: column;
-        padding: 3%;
+ @media screen and (max-width:320px){
+    .imagem-responsive{
+      margin-bottom: 20%;
     }
-
-    #movieContent button{
-        width: 100%;
+    footer{
+       margin-top: 30%;
     }
-
-    #mainInfoMovieDiv{
-        padding: 3%;
-        display: flex;
-        flex-direction: column;
-   
-    }
-
-
-}
+ }
