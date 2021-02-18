@@ -121,6 +121,10 @@ h1{
    animation-duration: 1000ms;
 }
 
+.w3-animate-bottom{
+   animation-duration: 1000ms;
+}
+
  @media screen and (max-width:440px){
    .box{
       text-align: center;

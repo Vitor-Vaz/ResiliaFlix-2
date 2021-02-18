@@ -264,6 +264,10 @@ footer{
  #networks i:hover{
     color: white;
  }
+
+ .w3-animate-top{
+    animation-duration: 2000ms;
+ }
  
  @media screen and (max-width:760px){
     .form-login{
@@ -282,9 +286,6 @@ footer{
         height: 200px !important;
     }
 
-    .container-fluid{
-        
-    }
 
  }
  @media screen and (max-width:500px){
