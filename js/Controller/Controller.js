@@ -34,5 +34,4 @@ document.getElementById('procuraFilme').addEventListener("click", (event) => {
     FilmeController.carregaFilme(document.getElementById('pesquisaFilme').value);
 })
 
-
-//console.log("To aqui");
+ FilmeController.carregaFilme(localStorage.getItem("filme"));

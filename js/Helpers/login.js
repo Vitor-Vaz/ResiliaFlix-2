@@ -4,13 +4,15 @@ class Login{
       let inputPassword = document.getElementById("input-password-login").value;
       const valorEntrada = JSON.parse(localStorage.getItem("entrar"));
          if(localStorage.getItem("entrar") == null){
-            alert("Register")
+            document.querySelector("#invalid").textContent="Account not exist";
+            document.querySelector(".invalid-feedback").style.display="block";
          }
-         if(inputEmail === valorEntrada.email && inputPassword === valorEntrada.password ){
+         if(inputEmail === valorEntrada.email && inputPassword === valorEntrada.password  ){
             //Mudar para home
-            window.location.href="paginainicialHome.html";
+            window.location.href="paginaInicialHome.html";
          }
          else{
+            document.querySelector("#invalid").textContent=" Email or password is not correct"
            document.querySelector(".invalid-feedback").style.display="block";
          }
     }
