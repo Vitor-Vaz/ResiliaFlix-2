@@ -1,4 +1,5 @@
 .flex-container {
+<<<<<<< HEAD
    font-family: 'Rubik', sans-serif;
    display:flex;
    justify-content: space-around;
@@ -59,20 +60,89 @@
    border: none;
    color: #ccc;
 
+=======
+    font-family: 'Rubik', sans-serif;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(126, 121, 121, 0.6);
+    font-size: 20px;
+    
+}
+
+#hamburguer{
+    border-color: white;
+    color: white;
+}
+
+.dropdown-menu{
+    border-color: white;
+    background-color: rgba(126, 121, 121, 0.6);
+}
+
+.dropdown-menu li{
+    border-color: white;
+}
+
+.flex-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.flex-container a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+.logo{
+    margin-top: 10px;
+    width: 150px;
+}   
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#pesquisaFilme{
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: 0;
+}
+
+#procuraFilme{
+    border: none;
+    color: #ccc;
+>>>>>>> c7d5cb3eed5a4fbf80fe91da7d851120a848b2c5
 
 }
 
 #procuraFilme:hover{
+<<<<<<< HEAD
    background-color: white;
    color: #0f0e35;
+=======
+    background-color: white;
+    color: #0f0e35;
+>>>>>>> c7d5cb3eed5a4fbf80fe91da7d851120a848b2c5
 
 }
 
 button{
+<<<<<<< HEAD
    background-color: #f0f4f5;
    font-size: 20px;
    font-weight: bold;
    border-radius: 6px;
+=======
+    background-color: #f0f4f5;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+>>>>>>> c7d5cb3eed5a4fbf80fe91da7d851120a848b2c5
 }
 
 .d-flex button{
@@ -85,6 +155,7 @@ button:hover{
 
 }
 
+<<<<<<< HEAD
 button i{
     color: white;
 }
@@ -109,6 +180,11 @@ footer{
 #box1{
    width: 80%;
    display: flex;
+=======
+#box1{
+    width: 80%;
+    display: flex;
+>>>>>>> c7d5cb3eed5a4fbf80fe91da7d851120a848b2c5
 
 }
 
@@ -203,6 +279,7 @@ footer{
 @media(max-width: 600px){
 
 
+<<<<<<< HEAD
    footer{
        display: flex;
        flex-direction: column;
@@ -213,3 +290,18 @@ footer{
        margin-top: 20px
    }
 }
+=======
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #networks{
+        margin-top: 20px
+    }
+
+    
+}
+
+>>>>>>> c7d5cb3eed5a4fbf80fe91da7d851120a848b2c5

@@ -35,7 +35,6 @@ body{
 }
 .input-cadastro::placeholder{
   color: #ccc;
- 
 }
 .input-cadastro:focus{
    outline: 0;
